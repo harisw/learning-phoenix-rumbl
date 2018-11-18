@@ -6,6 +6,7 @@ defmodule Rumbl.Video do
     field :title, :string
     field :description, :string
     belongs_to :user, Rumbl.User, foreign_key: :user_id
+    belongs_to :category, Rumbl.Category
 
     timestamps()
   end
